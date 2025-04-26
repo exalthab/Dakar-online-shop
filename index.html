@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Meta Tags & Title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Store's Landing Page</title>
+
+  <!-- Inline CSS for extra features like applying @media queries-->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+  <!-- Tailwind CSS CDN, offline-Standalone (no CDN=Content Delivery Network) or online mode -->
+  <script src="https://cdn.tailwindcss.com"></script> : This is an online Tailwind CSS mode
+  <!-- <link href="dist/output.css" rel="stylesheet"> : This is an offline-Standalone (no CDN) Tailwind CSS mode -->
+
+  <style>
+    
+  </style>
+</head>    
+<body class="bg-gray-100 text-gray-800">
+    
+   <!-- I =====================
+       HEADER & NAVIGATION
+  ========================== -->
+  <header id="header" class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+
+      <!-- Logo / Brand=Company name -->
+      <h1 class="text-4xl font-bold text-blue-600">Dakar-online Shop</h1>
+
+      <!-- Navigation and menu links -->
+      <nav class="space-x-4">
+        <a href="#header" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#products" class="text-gray-700 hover:text-blue-600">Products</a>
+        <a href="#footer" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+<!--II =========================
+       PRODUCT SECTION
+  ========================== -->  
+  <section id="products" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Section Title -->
+      <h2 class="text-3xl font-bold text-center mb-10"> Featured Electronic Products</h2>
+
+      <!-- Product Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Product Card 1 -->
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-5 text-center">
+          <img src="images/ultraslim-laptop.jpg" alt="Laptop" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="font-semibold text-lg">Ultra Slim Laptop</h3>
+          <p class="text-sm text-gray-600 mt-2">Powerful & portable for professionals.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+
+        
+        <!-- Product Card 2 -->
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-5 text-center">
+          <img src="images/smart_watch.jpg" alt="Tablet" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="font-semibold text-lg">Smart Watch</h3>
+          <p class="text-sm text-gray-600 mt-2">Track your fitnes, health condition and stay connected.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-5 text-center">
+          <img src="images/wireless_headphone.jpg" alt="Speaker" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="font-semibold text-lg">Wireless Headphones</h3>
+          <p class="text-sm text-gray-600 mt-2">Enjoy immersive sound with long battery life.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-5 text-center">
+          <img src="images/camera-drone.jpg" alt="Drone" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="font-semibold text-lg">HD Camera Drone</h3>
+          <p class="text-sm text-gray-600 mt-2">Capture amazing aerial shots with precision.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+        
+      </div>
+    </div>
+  </section> 
+
+<!--III =========================
+       FOOTER SECTION
+  ========================== -->
+
+  <footer id="footer" class="bg-gray-800 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Dakar-online shop. All rights reserved.</p>
+  
+    <p class="text-sm mt-2">
+      <!-- Footer Links -->
+      <a href="#" class="hover:underline">Privacy Policy</a> · 
+      <a href="#" class="hover:underline">Terms</a> · 
+      <a href="#" class="hover:underline">Contact Support</a>
+    </p>
+  
+    <p class="text-xs text-gray-400 mt-2">
+      Designed by 
+      <a href="mailto:exalthab@gmail.com" class="text-blue-400 hover:underline">
+        THEO
+      </a>
+    </p>
+  </footer>
+  
+
+</body>
+</html>

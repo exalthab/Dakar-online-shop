@@ -1,0 +1,50 @@
+
+Using no CDN. Avantages, 
+I can work on the project on my computer 
+and see the progress, 
+in case there is no Internet connection.
+
+STEPS TO SETTING UP
+
+Step1. Creation of html file
+Step2. Creation of images folder. This folder will hold all images downloaded from unsplash webpage or picked from camera.
+Step3. Download a standalone Tailwindcss from GitHub (eg. Ver 4.0 ) and locate the one compatible with Windows. i.e tailwindcss64.exe. This must be into the project folder.
+Step4.Extract the folder to the path of the project (i.e landingpage-shop)
+Step5. Rename the download and unzipped folder and rename it to “tailwind.exe” 
+Step6. Create folder called “src”
+Step7. Inside the folder src, create a file called “input.css”
+Step8. Inside the file input.css : write the following
+@import “tailwindcss”;
+Step9. Creat a file name it “tailwind.config.js
+Step10. Inside the file, write the following code:
+	module.exports = {
+    content: ["./index.html"],  // Tell Tailwind where are the classes
+    theme: {
+      extend: {
+        colors:{
+            brand:"", // Custom color for the header/brand
+        }
+      }
+    },
+    plugins: [],
+  };
+  
+Step11.With Vscode, open the terminal then launch Git Bash.
+Step12. Run the following code>
+./tailwindcss.exe -i ./src/input.css -o ./dist/output.css –watch
+This code will create the “dist” folder. Inside this folder, it will generate an “output.css” file.
+Step12. Go to index.html head and create a link that goes to the tailwind css.
+Step 13. Go live and test the landing page using different screen’s devices.
+N.B: Each time there is a change in the project input.css file, the command on step12 has a pupose to update automatically the output.css accordingly
+Step.14. The styles.css file is optional  
+Step.15. Create a documentation folder
+
+
+Notice:
+While trying to load file to GitHub, It wasn't be possible.
+remote: error: File tailwindcss.exe is 138.13 MB; this exceeds GitHub's file size limit of 100.00 MB
+
+That is why, the use of option 2 is an alternative.
+by disactivating the link in index.html.
+  <!-- <script src="https://cdn.tailwindcss.com"></script> : This is an online Tailwind CSS mode -->
+Hence , I have to delete the file tailwindcss.exe.
